@@ -12,3 +12,6 @@ spec:
     path: manifests
     repoURL: https://github.com/jblafage/argocd-directory.git
     targetRevision: HEAD
+    directory:
+      recurse: true
+      exclude: 'rbac/rolebinding.yaml'
