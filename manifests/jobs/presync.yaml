@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: presync-check
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+spec:
+  template:
+    spec:
+      containers:
+      - name: presync-container
+        image: busybox
+        command: ["sh", "-c", "echo 'PreSync: Checking cluster status...'"]
+      restartPolicy: Never
