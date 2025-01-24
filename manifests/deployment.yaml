@@ -16,7 +16,7 @@ spec:
         app: httpbin
         version: v1
     spec:
-      serviceAccountName: httpbin
+      serviceAccountName: httbin
       containers:
       - image: docker.io/mccutchen/go-httpbin:v2.15.0
         imagePullPolicy: IfNotPresent
