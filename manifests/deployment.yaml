@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: httpbin
+  annotations:
+    link.argocd.argoproj.io/external-link: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 spec:
   replicas: 3
   selector:
