@@ -22,4 +22,4 @@ spec:
         imagePullPolicy: IfNotPresent
         name: httpbin
         ports:
-        - containerPort: 9000
+        - containerPort: 8080
